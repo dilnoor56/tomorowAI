@@ -1,0 +1,360 @@
+<html>
+    <head>
+        <script src="jquery-3.7.1.min.js"></script>
+        <title>TomorrowAI </title>
+        <link rel="icon" type="image/png" sizes="128x128" href="gh.png" style="border-radius: 50%;">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            
+            .body{
+                background-image: url(bg.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover;
+                
+                transform-origin: top left; 
+            }
+
+            .headi{
+                transform: translateX(500px);
+                transform: translateY(0.001%);
+                margin-top: 100px;
+                font-size: 60px;
+                color: black;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .topnav{
+              margin-top: 0%;
+              transform: translateY(0.01em);
+              position: fixed;
+            }
+
+           
+            
+            .topnav button:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            
+            .topnav button.active {
+              background-color: black;
+              color: white;
+              
+            }
+           
+            input[type=text] {
+              float: none;
+              padding: 6px 170px;
+              transform: translateX(100em);
+              margin-left: 500px;
+              
+              transform: translateY(20px);
+              font-size: 17px;
+              justify-content: center;
+              
+              transform: translateY(1.9em);
+              align-content: center;
+
+              border: 2px  black ;
+             border-radius: 0px;
+
+              text-align: center;
+
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            h1 {
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: antiquewhite;
+        font-size: small;
+        margin-left: 700px;
+        transform: translateY(100px);
+
+        
+            }
+      .p{
+            font-size: 20px;
+            text-align:center;
+            transform: translateY(10px);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black
+      }
+
+      
+      .text-1 {
+        animation: text1;
+        
+      }
+      .text-2 {
+        animation: text2;
+      }
+      .regu{
+        animation: regu;
+      }
+      .cons{
+        animation: cons;
+      }
+      .text-1,
+      .text-2 ,
+      .regu,
+      .cons{
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 15s;
+        animation-timing-function: steps(20, end);
+        animation-iteration-count: infinite;
+      }
+      .text-1::after,
+      .text-2::after,
+      .regu::after,
+      .cons::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+      }
+      @keyframes text2 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        60%,
+        90% {
+          width: 12em;
+        }
+      }
+      @keyframes regu {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        60%,
+        90% {
+          width: 7em;
+        }
+      }
+      @keyframes text1 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 12.5em;
+        }
+      }
+      @keyframes cons {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 9em;
+        }
+      }
+      @keyframes caret {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+        .robo{
+            transform: translateX(1%);
+            transform: scale(60%);
+            opacity: 50%;
+            margin-bottom: 0px;
+        }
+
+        .responsive-video1{
+            width: 35%;  
+            height: auto; 
+            transform: scale(1000px); 
+            transform: translateX(450px);
+           
+            align-content: right;
+           
+            border-radius: 10px;
+        }
+        .li1{
+          transform: translateY(100px);
+          width: 1000px;
+        }
+        .wia{
+
+          background-size: 900px;
+          background-color:rgb(255, 255, 255,0.9);
+          background-blend-mode: multiply;
+          
+          border-radius: 20px;
+        }
+        button{
+          background-color: azure;
+          border-radius: 10px;
+          border: none;
+          font-size: 20px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .aie{
+          opacity: 0.3;
+        }
+        .aie:hover{
+            opacity: 1;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+               }
+            100% {
+                 opacity: 1; 
+            }
+          
+          }
+
+        .responsive-video1,.wia,.topnav,.ani1,.search,hr,.headii.ba,.ge{
+          animation: fadeIn 2s ease-in-out;
+        }
+        .reveal-text {
+          opacity: 0;
+           transition: opacity 3s ease-out;
+          }
+
+        .reveal-text.visible {
+          opacity: 1;
+        }
+        #go:hover {
+              background-color: #ddd;
+              color: black;
+            }
+           </style>
+   
+  
+    </head>
+    <body bgcolor="black">
+        <div> 
+               <div class="topnav">
+       
+          <button id="ho" href="#Home" class="active" >Home</button>
+          <button id="ait" href="#AI_trends" >AI trends</button>
+            <button id="as" href="#AI Skills" >AI Skills</button>
+          <button id="df" href="#Deepfakes" >Deepfakes</button>
+          <button id="ff" href="#AI foe or friend" >AI foe or friend</button>
+                
+        </div>  
+      </div>
+
+      <h1 class="ani1">
+        <span class="text-1">Search for keywords</span>
+        <span class="text-2">example: AI trends</span>
+      </h1>
+      <input type="text" placeholder="Search.." class="search" id="searc">
+      <button id="go" style="border-radius: 0%;">GO!</button>
+        <hr class="li1">
+
+        
+
+        <div class="wia">
+          <h2 class = " headi">
+                     What is AI ?
+                 </h2>
+                 <div> <video controls class="responsive-video1" controls autoplay='true'>
+                     <source src="whatisAI.mp4" type="video/mp4">
+                    
+                 </video>
+               </div>
+                 <p class="p" ><b>Artificial Intelligence (AI)</b>  refers to the simulation of human intelligence processes by machines, especially computer systems. These processes include learning (the acquisition of information and rules for using the information), reasoning (using the rules to reach approximate or definite conclusions), and self-correction. AI aims to create systems that can perform tasks that normally require human intelligence.<br>                            "  </p>
+               </div>
+               <hr style="transform: translateY(60px);">
+               <h2 class = " headi" style="color: black;font-size: 45px;">
+                <a style="background-color: white;">Ethical and Societal</a> <a class="cons" style="color: blueviolet;">Considerations</a><a class="regu"> Regulations</a>
+                <div class="reveal-text">     
+                <p style="font-size: 10px;"> <br>=><a style="font-size: 29px;color: blueviolet;"> Bias and Fairness:</a> <a style="font-size: 25px;color: white;">Ensuring AI systems do not perpetuate or exacerbate biases present in training data.</a></p>
+                <p style="font-size: 10px;"> <br>=><u><a style="font-size: 29px;color: blueviolet;"> Privacy:</a></u> <a style="font-size: 25px;color: white;"> Safeguarding personal information and maintaining data security.</a></p>
+              
+                <p style="font-size: 10px;"> <br>=><u><a style="font-size: 29px;color: blueviolet;"> Job Displacement: </a></u> <a style="font-size: 25px;color: white;">Addressing the impact of automation on employment and the workforce.</a></p>
+                
+                
+                <img src="aie.png" style="border-radius: 100%;border: solid white;width:300px;" class="aie" >
+            </h2> 
+            </div>
+            <hr>   
+          </div>
+          
+          <h2 class = "headii" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;content: '';color: black;font-size: 45px;background-image: url(robo-removebg-preview.png);background-repeat: no-repeat;background-position: center;background-size: 300px;background-repeat: no-repeat;opacity: 0.8;z-index: -1; ">
+           <a style="background-color: aliceblue;border-radius: 10px;padding-left: 20px;padding-right: 20px;opacity: 1;">Types of AI </a>
+           <div class="reveal-text" style="opacity: 1;">     
+           <p style="font-size: 10px;opacity: 1;"> <br>=><a style="font-size: 29px;color: blueviolet;opacity: 1;"> Narrow AI (Weak AI):</a> <a style="font-size: 25px;color: white;opacity: 1;">This type of AI is designed  <a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">to perform a narrow</a> <a style="font-size: 25px;color: white;opacity: 1;"> task, such as facial recognition or internet searches ....... It operates under a limited set of &nbsp;<a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">constraints and is </a> <a style="font-size: 25px;color: white;opacity: 1;"> &nbsp  not capable of performing tasks outside of its predefined functions..</a></a></p>
+         
+           <p style="font-size: 10px;opacity: 1;"> <br>=><u><a style="font-size: 29px;color: blueviolet;opacity: 1;"> General AI (Strong AI): </a></u> <a style="font-size: 25px;color: white;opacity: 1;">This type of AI aims to <a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">understand</a> <a style="font-size: 25px;color: white;opacity: 1;"> ,learn, and apply knowledge a wide range of tasks at a level ........comparable to human intelligence. It is still largely theoretical and not yet realized.</a></a></p>
+           
+           
+           
+           
+       </h2> 
+       </div>
+        <script>
+        $(document).ready(function(){
+          alert("use zoom 75% for best experience")
+          $('#ait').click(function(){
+            $('.active').removeClass('active')
+            $('#ait').addClass('active')
+            window.location.href='AI_trends.html'
+           
+          });
+          $('#as').click(function(){
+            $('.active').removeClass('active')
+            $('#as').addClass('active')
+            window.location.href='AI_skills.html'
+          });
+          $('#df').click(function(){         
+            $('.active').removeClass('active')
+            $('#df').addClass('active')
+            window.location.href='Deepfakes.html'
+          });
+          $('#ff').click(function(){
+            $('.active').removeClass('active')
+            $('#ff').addClass('active')
+            window.location.href='Foeorfriend.html'
+          });
+          $(window).on('scroll', function() {
+        $('.reveal-text').each(function() {
+            var elementTop = $(this).offset().top;
+            var windowHeight = $(window).height();
+            var scrollTop = $(window).scrollTop();
+            
+            if (scrollTop + windowHeight > elementTop) {
+                $(this).addClass('visible');
+            }
+        });
+
+    });
+    $('#go').click(function(){
+          var inp =$('#searc').val()
+        
+          window.open(('https://www.google.com/search?q=' + inp +''),'_blank')
+          if (win) {
+            win.focus();
+            } else {
+             alert('Please allow popups for this website');
+      }
+          
+        });
+        });
+        </script>
+        </body>
+</html>

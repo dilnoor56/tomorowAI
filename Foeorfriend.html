@@ -1,0 +1,105 @@
+<html>
+    <head>
+      
+      <title>TomorrowAI </title>
+        <link rel="icon" type="image/png" sizes="128x128" href="gh.png" style="border-radius: 50%;">
+        <script src="jquery-3.7.1.min.js"></script>
+        <style>
+          body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+          }
+             .topnav{
+              margin-top: 0%;
+              transform: translateY(1em);
+              
+            }
+            .topnav button:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            .topnav button.active {
+              background-color: black;
+              color: white;
+              
+            }
+            button{
+               background-color: azure;
+               border-radius: 10px;
+                  border: none;
+              font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .headi{
+                
+                transform: translateX(900px);
+                transform: translateY(0.01%);
+
+                padding-bottom: 70px;
+                padding-left: 30px;
+                padding-right: 20px;
+                font-size: 40px;
+                margin-top: 120px;
+                width: 1020px;
+                height: 520px;
+                background-color: white;
+                border-radius: 10px   ;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+        </style>
+
+    </head>
+
+    <body bgcolor="black">
+        <div class="topnav">
+          <button id="ho" href="#Home"  >Home</button>
+          <button id="ait" href="#AI_trends" >AI trends</button>
+          <button id="as" href="#AI Skills" >AI Skills</button>
+          <button id="df" href="#Deepfakes" >Deepfakes</button>
+          <button id="ff" href="#AI foe or friend" class="active">AI foe or friend</button>  
+          </div class = "home">
+
+          <h2 class = " headi">
+            <p><u>Is AI a Friend Or Foe??</u></p>
+            <img src="aifof.jpg" style="border-radius: 6%;border: solid white;width: 500px; height: 270px; margin-left: 500px;" class="aie" >
+
+            <a style="margin-bottom: 5%;font-size: 30px;margin-left: 300px;"> <br>AI can be both a friend and a foe,<br></a><a style="font-size: 20px;margin-right: 0%;text-align:center;"> <br> depending on its application and context. As a friend, it assists with everyday tasks, provides valuable insights, and enhances productivity. As a foe, it can pose risks like privacy invasion, job displacement, or misuse in harmful ways. Ultimately, whether AI acts as a friend or foe hinges on how it's developed, implemented, and regulated. Responsible use and ethical considerations are crucial in shaping its role.
+              <br>                                          
+</div>
+             
+         </a>    
+         </h2>
+         <hr>
+         <br>
+         <p style="font-size: 25px;"> <br>=><b><a style="font-size: 29px;color: blueviolet;"> AI As a Friend:</a></b> <a style="font-size: 27px; color: white;">As a friend AI can provide Enhanced productivity, Medical Advancements, Personal Assistance, and help the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;students in Education purposes.</a></p>
+         <p style="font-size: 25px;"> <br>=><b><a style="font-size: 29px;color: blueviolet;"> AI As a Foe:</a></b> <a style="font-size: 27px; color: white;"> As a Foe AI can harm us as it has privacy concerns, due to automation of AI Job Displacement has been &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;occurings these days which would exceed highly in futre. Sometimes AI can be Bias and used for Cyberthreat and other &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malicious perposes. <a></p>
+        <br></br>
+             </a>    
+              </h2>
+          <hr>  
+          <script>
+            $(document).ready(function(){
+              $('#ait').click(function(){
+                $('.active').removeClass('active')
+                $('#ait').addClass('active')
+                window.location.href='AI_trends.html'
+              });
+              $('#as').click(function(){
+                $('.active').removeClass('active')
+                $('#as').addClass('active')
+                window.location.href='AI_skills.html'
+              });
+              $('#ho').click(function(){
+                $('.active').removeClass('active')
+                $('#ho').addClass('active')
+                window.location.href='main.html'
+              });
+              $('#df').click(function(){
+                $('.active').removeClass('active')
+                $('#df').addClass('active')
+                window.location.href='Deepfakes.html'
+              });
+            });
+            </script>
+    </body>
+</html>

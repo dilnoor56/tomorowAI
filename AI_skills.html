@@ -1,0 +1,255 @@
+<html>
+    <head>
+      <title>TomorrowAI </title>
+        <link rel="icon" type="image/png" sizes="128x128" href="gh.png" style="border-radius: 50%;">
+        <script src="jquery-3.7.1.min.js"></script>
+        <style>
+             .topnav{
+              margin-top: 0%;
+              transform: translateY(1em);
+              
+            }
+            .topnav button:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            .topnav button.active {
+              background-color: black;
+              color: white;
+              
+            }
+            button{
+               background-color: azure;
+               border-radius: 10px;
+                  border: none;
+              font-size: 20px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .headi{
+                transform: translateX(500px);
+                transform: translateY(0.001%);
+                padding-bottom: 50px;
+                margin-top: 100px;
+                margin-left: 50;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 0%;
+                font-size: 60px;
+                width: 1020px;
+                height: 480px;
+                background-color: white;
+                border-radius: 10px   ;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .gpt{
+              width: 200px;
+              border-radius: 10px;
+
+              transform: translateY(0.001cm);  
+              opacity: 0.8;
+            }
+            .dalle{
+              width: 200px;
+              border-radius: 10px;
+
+              transform: translateX(3.9cm);  
+              opacity: 0.8;
+              
+            }
+            .open{
+              width: 200px;
+              border-radius: 10px;
+
+              transform: translateX(8cm);  
+              opacity: 0.8;
+              
+            }
+            img{
+                border: solid black;
+            }
+            img:hover{
+                opacity: 1;
+            }
+            .ba{
+        animation: ba;
+      }
+      .ge{
+        animation: ge;
+      }
+      .ba,
+      .ge 
+      {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 15s;
+        animation-timing-function: steps(20, end);
+        animation-iteration-count: infinite;
+      }
+      .ba::after,
+      .ge::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+      }
+      @keyframes ba {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        60%,
+        90% {
+          width: 3em;
+        }
+      }
+
+      @keyframes ge {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 3em;
+        }
+      }
+      @keyframes caret {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+      .gp{
+          transform: translateY(100px);
+          
+      }
+            
+      .headii{
+        color: #ddd;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .hi{
+        transform: translateY();
+      }
+      .headii,.headiii{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      @keyframes fadeIn {
+            0% {
+                opacity: 0;
+               }
+            100% {
+                 opacity: 1; 
+            }
+          
+          }
+
+         .headi,.headii,.headiii,hr{
+          animation: fadeIn 1s ease-in-out;
+         }
+
+        </style>
+
+    </head>
+
+    <body bgcolor="black">
+        <div class="topnav">
+          <button id="ho" href="#Home"  >Home</button>
+          <button id="ait" href="#AI_trends" >AI trends</button>
+          <button id="as" href="#AI Skills" class="active">AI Skills</button>
+          <button id="df" href="#Deepfakes" >Deepfakes</button>
+          <button id="ff" href="#AI foe or friend" >AI foe or friend</button>  
+          </div class = "home">
+
+          <h2 class = " headi">
+            <p><u>AI-Skills</u></p>
+            <a style="margin-bottom: 0%;font-size: 40px;margin-right: 0%;">In 2024,</a><a style="font-size: 20px;margin-right: 0%;">  staying competitive in the job market means mastering key AI tools. Focus on:<br><br>
+              <div style="font-size: 20px;"> 1. <b>ChatGPT-4 and its APIs</b>for natural language processing and conversational AI.<br>
+                <br>
+                2. DALL-E 3 for advanced image generation and creative tasks.<br>
+                <br>
+                3. Codex for code generation and automation in software development.<br>
+                <br>
+                4. TensorFlow and PyTorch for building and deploying machine learning models.<br>
+                <br>
+                5. AutoML platforms  like Google’s AutoML for simplifying model creation.<br>
+                <br>
+                
+                These tools are critical for roles in data science, software development, and digital marketing.</div>
+             </a>
+             
+            </h2>
+            <br>  
+            <hr style="transform: translateY(150);">
+            <a><a style="font-size: 100px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   transform: translateY(20px);text-align: center;color: white;" class="ba">Chat </a><a style="text-align: center;font-size: 100px;transform: translateY(20px);color: cyan;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" class="ge">Chat</a><a style="text-align: center;font-size: 100px;transform: translateY(180px);color: black    ;background-color: #ddd;border-radius: 10px;">GPT</a><img src="gp.png" style="width: 100px;transform: translateY(20px);transform: translateX(900px);transform: translateY(20px)"><br><br>
+
+          <h2 class = " headii">
+                       
+              <a style="font-size: 25px;text-align: left;align-content: left;color: white;">The infographic titled <a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">"ChatGPT Sprints to One Million Users" </a> <a style="font-size: 25px;color: white;opacity: 1;"> compares the time it took various online services to reach one million users. Here's a breakdown:<br><br>
+                <img src="gs.png" style="width: 800px;border-radius: 10px;transform: translateX(730px);"><br> 
+                -<b style="color: red;">Netflix:  </b>  3.5 years<br>
+
+                - <b style="color: red;">Kickstarter:  </b>2.5 years<br>
+                - <b style="color: red;">Airbnb: </b> 2.5 years<br>
+                - <b style="color: red">Twitter: </b> 2 years<br>
+                - <b style="color: red;">Foursquare: </b>  13 months<br>
+                - <b style="color: red;">Facebook: </b>  10 months<br>
+                -<b style="color: red;">Dropbox: </b>  7 months<br>
+                - <b style="color: red;">Spotify: </b> : 5 months<br>
+                - <b style="color: red;">Instagram: </b> : 2.5 months<br>
+                - <b style="color: red;">ChatGPT: </b> : 5 days<br><br>
+                
+                This infographic highlights the rapid adoption of <a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">ChatGPT  </a> <a style="font-size: 25px;color: white;opacity: 1;">  &nbsp;compared to other popular online services, showcasing its impressive growth rate.
+                
+                
+       </h2>
+          <hr>
+
+          <h2 class = " headiii">
+            <a><a style="font-size: 100px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;   transform: translateY(20px);text-align: center;color: white;"  >Companies </a><a style="text-align: center;font-size: 100px;transform: translateY(180px);color: black    ;background-color: #ddd;border-radius: 10px;">Taking help of AI</a><img src="gp.png" style="width: 100px;transform: translateY(20px);transform: translateX(900px);transform: translateY(20px)"><br><br>
+     
+            <a style="font-size: 25px;text-align: left;align-content: left;color: white;">From Business Insider India and discusses <a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">   Marvel’s “Secret Invasion” series</a> <a style="font-size: 25px;color: white;opacity: 1;">. It mentions that the series used AI to create its intro sequence, which has led to some fans being upset. This highlights the ongoing debate about the use of AI in creative processes and how it can impact audience reactions.<br><br>
+              <hr><img src="mr.png" style="width: 800px;border-radius: 10px;transform: translateX(730px);"><hr><br> 
+              -<b style="color: blueviolet;font-size: 30px;">AI in Creative Processes:  </b>  AI can significantly speed up the creative process, allowing for quicker production times and potentially reducing costs. This can be particularly useful in creating complex visual effects or sequences.<br><br>
+
+              - <b style="color: blueviolet; font-size: 30px;">Marvel’s Approach  </b>Experimentation: Marvel’s decision to use AI for the intro sequence of “Secret Invasion” can be seen as an experiment to explore new possibilities in storytelling and production.<br><br>
+             
+              Overall, the use of AI in entertainment is a <a style="font-size: 25px;color: blueviolet;opacity: 1;background-color: white;">complex and multifaceted issue,</a>  <a style="font-size: 25px;color: white;opacity: 1;">  &nbsp;with both potential benefits and drawbacks. It’s a topic that will likely continue to evolve as technology advances and as creators and audiences navigate the balance between innovation and tradition.
+              
+              <hr>
+     </h2>
+          <script>
+            $(document).ready(function(){
+              $('#ait').click(function(){
+                $('.active').removeClass('active')
+                $('#ait').addClass('active')
+                window.location.href='AI_trends.html'
+              });
+              $('#ho').click(function(){
+                $('.active').removeClass('active')
+                $('#ho').addClass('active')
+                window.location.href='main.html'
+              });
+              $('#df').click(function(){
+                $('.active').removeClass('active')
+                $('#df').addClass('active')
+                window.location.href='Deepfakes.html'
+              });
+              $('#ff').click(function(){
+                $('.active').removeClass('active')
+                $('#ff').addClass('active')
+                window.location.href='Foeorfriend.html'
+              });
+            });
+            </script>
+    </body>
+</html>
